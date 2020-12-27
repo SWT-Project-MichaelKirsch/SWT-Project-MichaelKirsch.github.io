@@ -5,6 +5,7 @@ $('#video_duration_timer').hide()
 $('#video_settings').hide()
 $(".navbar").hide()
 $("#video_button").hide()
+$(".spinner_video").hide()
 
 
 

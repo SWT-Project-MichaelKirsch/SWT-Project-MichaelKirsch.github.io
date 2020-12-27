@@ -200,3 +200,9 @@
     left: 50%;
     top: 50%;
 }
+
+#spinner_video{
+    position: fixed;
+    top: 2%;
+    left: 97%;
+}
