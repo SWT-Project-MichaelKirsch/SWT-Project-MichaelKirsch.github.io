@@ -178,7 +178,11 @@
     color: #ffffff;
 }
 
-
+.image_in_rose{
+    position: relative;
+    max-width: 50%;
+    max-height: 50%;
+}
 
 
 
