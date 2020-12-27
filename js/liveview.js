@@ -118,6 +118,7 @@ $("#lowerleft_corner").click(function (){
 
 $("#fullscreenbutton").click(function (){
     openFullscreen();
+    //adhauwduiawd
 })
 
 
