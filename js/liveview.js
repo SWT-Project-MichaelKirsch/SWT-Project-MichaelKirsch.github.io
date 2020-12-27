@@ -29,7 +29,7 @@ let nav = $(".navbar")
 function hide_when_open_menu(){
     at_least_one_menu_open = true;
     cm.hide('fast')
-    cm_area.hide('fast')
+    // cm_area.hide('fast')
     nav.hide('fast')
     commorose_out=false
 }
@@ -117,18 +117,29 @@ cm_area.click(function (event){
             nav.hide('fast')
         }
         else{
-            commorose_out=true;
-            $('#commorose').css({top: event.clientY, left: event.clientX, position:'fixed'});
-            var posx = event.clientX;
-            var posy = event.clientY;
-            var buttonsize =  $(document).width()*0.13;
-            $('.corner_buttons').css({width: buttonsize, height: buttonsize,zIndex:100, position:'fixed'})
-            $('#upperright_corner').css({top: posy-buttonsize, left: posx});
-            $('#lowerright_corner').css({top: posy, left: posx, position:'fixed'});
-            $('#upperleft_corner').css({top: posy-buttonsize, left: posx-buttonsize});
-            $('#lowerleft_corner').css({top: posy, left: posx-buttonsize});
-            cm.show('fast')
-            nav.show('fast')
+
+            if (at_least_one_menu_open) {
+                $('#thermal-options').hide('fast')
+                $('#video_settings').hide('fast')
+                $('#close_menu').hide()
+                at_least_one_menu_open = false;
+                $("#corner_button_div").show()
+                cm_area.show()
+            }
+            else {
+                commorose_out=true;
+                $('#commorose').css({top: event.clientY, left: event.clientX, position:'fixed'});
+                var posx = event.clientX;
+                var posy = event.clientY;
+                var buttonsize =  $(document).width()*0.13;
+                $('.corner_buttons').css({width: buttonsize, height: buttonsize,zIndex:100, position:'fixed'})
+                $('#upperright_corner').css({top: posy-buttonsize, left: posx});
+                $('#lowerright_corner').css({top: posy, left: posx, position:'fixed'});
+                $('#upperleft_corner').css({top: posy-buttonsize, left: posx-buttonsize});
+                $('#lowerleft_corner').css({top: posy, left: posx-buttonsize});
+                cm.show('fast')
+                nav.show('fast')
+            }
         }
 
 
