@@ -84,6 +84,11 @@ $("#lowerright_corner").click(function (){
     }
 })
 
+$("#lowerleft_corner").click(function (){
+
+}
+)
+
 
 $('#close_menu').click(function (){
     if (at_least_one_menu_open) {

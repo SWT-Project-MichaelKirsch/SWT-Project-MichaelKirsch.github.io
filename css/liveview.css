@@ -1,3 +1,11 @@
+.toast{
+    z-index: 12000;
+}
+
+
+.modal { transform: translate3d(0, 0, 0); }
+
+
 #leftside {
     position: fixed;
     left: 0px;
@@ -14,6 +22,9 @@
     height: 100%;
     width: 50%;
 }
+
+
+
 
 #thermal-options{
     position: fixed;
@@ -139,6 +150,7 @@
 
 .corner_buttons{
     width: 13%;
+    border: #1b1e21 solid ;
 }
 
 
@@ -195,10 +207,28 @@
 
 }
 
-.image_in_rose{
+#upperright_image{
+    position: relative;
+    left:25%;
+    top: 50%;
+}
+
+#lowerleft_image{
+    position: relative;
+    left: 50%;
+    top: 25%;
+}
+
+#upperleft_image{
     position: relative;
     left: 50%;
     top: 50%;
+}
+
+#lowerright_image{
+    position: relative;
+    left: 25%;
+    top: 25%;
 }
 
 #spinner_video{
