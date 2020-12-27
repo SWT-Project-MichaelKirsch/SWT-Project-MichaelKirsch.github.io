@@ -5,8 +5,13 @@ $('#video_duration_timer').hide()
 $('#video_settings').hide()
 $(".navbar").hide()
 
+
+
+
+
 var cm = $('#commorose')
 
+cm.hide()
 
 
 
@@ -20,7 +25,6 @@ var cw = $('.corner_buttons').width();
 $('.corner_buttons').css({'height':cw+'px'});
 
 let nav = $(".navbar")
-
 
 function hide_when_open_menu(){
     at_least_one_menu_open = true;
