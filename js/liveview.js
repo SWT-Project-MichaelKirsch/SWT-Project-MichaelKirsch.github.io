@@ -4,7 +4,7 @@ $('#close_menu').hide()
 $('#video_duration_timer').hide()
 $('#video_settings').hide()
 $(".navbar").hide()
-
+$("#video_button").hide()
 
 
 
@@ -70,14 +70,16 @@ $(".corner_buttons").mouseup(function (){
 
 
 function blink_text() {
-    $("#lowerright_corner").css('background-color',"#ff0000")
-    $("#lowerright_corner").fadeOut(500);
-    $("#lowerright_corner").fadeIn(500);
+    $("#video_button").css('background-color',"#ff0000")
+    $("#video_button").fadeOut(500);
+    $("#video_button").fadeIn(500);
+
 }
 
 $("#lowerright_corner").click(function (){
     video_on=!video_on;
     if(video_on){
+        $("#video_button").show()
         video_duration=0;
         blink_intervall = setInterval(blink_text, 1000);
 
@@ -86,6 +88,7 @@ $("#lowerright_corner").click(function (){
     }
     else {
         video_duration=0;
+        $("#video_button").hide()
         clearInterval(timer);
         clearInterval(blink_intervall)
         $(this).css('background-color',"#4e555b")
@@ -139,6 +142,9 @@ cm_area.click(function (event){
                 $('#lowerleft_corner').css({top: posy, left: posx-buttonsize});
                 cm.show('fast')
                 nav.show('fast')
+                if(!video_on){
+                    $("video_button").hide()
+                }
             }
         }
 
