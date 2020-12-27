@@ -13,6 +13,48 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="index.html">LiveCam</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+        </div>
+
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link ">
+                      LiveView
+                      <span class="sr-only">(current)</span>
+                    </span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Storage</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="btn" href="settings.html"><img src="static/settings-white-18dp.svg" width="30" height="30"
+                                                             alt="" loading="lazy"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
 <img id="videostream" src="static/random6.jpeg">
 <div id="leftside"></div>
 <div id="rightside"></div>
@@ -72,11 +114,11 @@
     </div>
 
     <div id="upperright_corner" class="corner_buttons">
-        <img  id="upperright_image" class="image_in_rose" src="static/baseline_settings_white_48dp.png">
+        <img id="upperright_image" class="image_in_rose" src="static/baseline_settings_white_48dp.png">
     </div>
 
     <div id="lowerleft_corner" class="corner_buttons">
-        <img  id="lowerleft_image" class="image_in_rose" src="static/baseline_camera_white_48dp.png">
+        <img id="lowerleft_image" class="image_in_rose" src="static/baseline_camera_white_48dp.png">
     </div>
 
     <div id="video_button_div">
@@ -85,7 +127,6 @@
             <p id="video_duration_timer">0</p>
         </div>
     </div>
-
 
 
 </div>
