@@ -1,0 +1,41 @@
+#video{
+    position: fixed;
+    top:30%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+
+}
+
+#storage{
+    position: fixed;
+    top:30%;
+    left: 55%;
+    width: 40%;
+    height: 40%;
+
+}
+
+body{
+    background-color: #1b1e21;
+}
+
+#logo{
+    position: fixed;
+    width: 50%;
+    left: 25%;
+}
+
+.big_buttons{
+    font-size: 500%;
+
+}
+
+#explain{
+    font-size: 400%;
+    position: fixed;
+    width: 20%;
+    height: 20%;
+    top: 75%;
+    left: 40%;
+}
