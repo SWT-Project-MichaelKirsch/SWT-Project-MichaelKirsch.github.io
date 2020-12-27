@@ -69,30 +69,17 @@ $(".corner_buttons").mouseup(function (){
 })
 
 
-function blink_text() {
-    $("#video_button").css('background-color',"#ff0000")
-    $("#video_button").fadeOut(500);
-    $("#video_button").fadeIn(500);
-
-}
-
 $("#lowerright_corner").click(function (){
     video_on=!video_on;
     if(video_on){
         $("#video_button").show()
         video_duration=0;
-        blink_intervall = setInterval(blink_text, 1000);
-
-        $('#video_duration_timer').show()
-        timer = setInterval( function() { video_duration++; $("#video_duration_timer").text(video_duration)}, 998 );
+        $(".spinner_video").show()
     }
     else {
         video_duration=0;
         $("#video_button").hide()
-        clearInterval(timer);
-        clearInterval(blink_intervall)
-        $(this).css('background-color',"#4e555b")
-        $('#video_duration_timer').hide()
+        $(".spinner_video").hide()
     }
 })
 
