@@ -160,10 +160,13 @@ cm_area.click(function (event){
                 var posx = event.clientX;
                 var posy = event.clientY;
                 var buttonsize =  $(document).width()*0.13;
+                var upbut = buttonsize*2
                 $('.corner_buttons').css({width: buttonsize, height: buttonsize,zIndex:100, position:'fixed'})
                 $('#upperright_corner').css({top: posy-buttonsize, left: posx});
                 $('#lowerright_corner').css({top: posy, left: posx, position:'fixed'});
-                $('#upperleft_corner').css({top: posy-buttonsize, left: posx-buttonsize});
+                $('#upperleft_corner').css({ width: upbut, top: posy-buttonsize, left: posx-buttonsize});
+                $('#upperleft_corner').css({"border-top-left-radius":buttonsize*2})
+                $('#upperleft_corner').css({"border-top-right-radius":buttonsize*2})
                 $('#lowerleft_corner').css({top: posy, left: posx-buttonsize});
                 cm.show('fast')
                 nav.show('fast')
