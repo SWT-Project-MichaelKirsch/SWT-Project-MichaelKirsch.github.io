@@ -193,3 +193,12 @@ $("#customRange4").on('input',function (){
     document.getElementById("videostream").style.filter = "contrast("+$(this).val()+")"
 })
 
+function snap(){
+    $("#videostream").fadeOut("fast")
+    $("#videostream").fadeIn("fast")
+}
+
+$("#lowerright_corner").on("click",function(){
+    $("#lowerright_corner").fadeOut("fast")
+    $("#lowerright_corner").fadeIn("fast")
+})
