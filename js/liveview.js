@@ -179,6 +179,8 @@ cm_area.click(function (event){
 
 })
 
+
+
 $("#customRange3").on('input',function (){
      console.log("brightness("+$(this).val()+")");
 
