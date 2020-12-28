@@ -8,7 +8,7 @@ $("#video_button").hide()
 $(".spinner_video").hide()
 
 
-
+screen.orientation.lock('landscape');
 
 var cm = $('#commorose')
 
