@@ -74,10 +74,10 @@
     <div id="thermal_slider_wrapper">
         <div id="slider_middle_static"></div>
         <img id="slider_middle_animated" src="static/jet.png">
-        <div class="slider_thermal" id="slider_thermal_low">
-            <p class="slider_label">20.4°C</p>
+        <div class="slider_thermal btn btn-info" id="slider_thermal_low">
+            <p class="slider_label ">20.4°C</p>
         </div>
-        <div class="slider_thermal" id="slider_thermal_high">
+        <div class="slider_thermal btn btn-info" id="slider_thermal_high">
             <p class="slider_label">45.4°C</p>
         </div>
     </div>
@@ -85,11 +85,11 @@
     <div id="thermal_modes_div">
         <h1 id="text_thermalmode">Thermal Modes</h1>
         <div class="btn-group mr-2" role="group" aria-label="First group" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" src="static/colorscale_autumn.jpeg" id="jet" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" src="static/colorscale_cool.jpeg" id="artic" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" src="static/colorscale_plasma.jpeg" id="flame" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" src="static/colorscale_turbo.jpeg" id="irgendwas" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" src="static/jet.png" id="iridwas" >
+            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_autumn.jpg'" src="static/colorscale_autumn.jpg" id="jet" >
+            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_cool.jpg'" src="static/colorscale_cool.jpg" id="artic" >
+            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_plasma.jpg'" src="static/colorscale_plasma.jpg" id="flame" >
+            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_turbo.jpg'" src="static/colorscale_turbo.jpg" id="irgendwas" >
+            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/jet.png'" src="static/jet.png" id="iridwas" >
         </div>
     </div>
 

@@ -190,3 +190,4 @@ $("#customRange4").on('input',function (){
 
     document.getElementById("videostream").style.filter = "contrast("+$(this).val()+")"
 })
+
