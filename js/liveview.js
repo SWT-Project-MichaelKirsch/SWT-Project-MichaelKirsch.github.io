@@ -171,7 +171,7 @@ cm_area.click(function (event){
                 cm.show('fast')
                 nav.show('fast')
                 if(!video_on){
-                    $("video_button").hide()
+                    $("video_button").hide() //
                 }
             }
         }
