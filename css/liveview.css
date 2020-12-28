@@ -2,6 +2,7 @@
     z-index: 12000;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 .modal { transform: translate3d(0, 0, 0); }
 
