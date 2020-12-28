@@ -179,3 +179,14 @@ cm_area.click(function (event){
 
 })
 
+$("#customRange3").on('input',function (){
+     console.log("brightness("+$(this).val()+")");
+
+    document.getElementById("videostream").style.filter = "brightness("+$(this).val()+")"
+})
+
+$("#customRange4").on('input',function (){
+    console.log("brightness("+$(this).val()+")");
+
+    document.getElementById("videostream").style.filter = "contrast("+$(this).val()+")"
+})
