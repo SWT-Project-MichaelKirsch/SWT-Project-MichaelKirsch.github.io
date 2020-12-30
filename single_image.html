@@ -55,29 +55,45 @@
             </ul>
         </div>
     </nav>
-        <div class="jumbotron jumbo_single">
-            <img id="image_big" src="static/random8.jpeg">
-            <div id="mapid"></div>
-            <form id="input_description">
-                <div class="form-group" >
-                    <label for="exampleFormControlSelect1">Priority</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-            </form>
 
-            <button class="btn-info btn btn-lg " id="download_button">Download</button>
 
-        </div>
+
+        <div class="container-lg jumbo_single ">
+                <div class="row ">
+                    <img id="image_big" src="static/random8.jpeg">
+                </div>
+                <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="mapid"></div>
+
+                    </div>
+
+                    <div class="col-sm">
+                        <img id="thermal" src="static/thermal.png">
+                    </div>
+
+                    <form id="input_description" class="col-sm">
+                        <div class="form-group" >
+                            <label for="exampleFormControlSelect1">Priority</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="btn-info btn btn-lg " id="download_button">Download</button>
+                    </form>
+
+                </div>
+                </div>
+            </div>
 
     <script>
         var map = L.map('mapid').setView([51.505, -0.09], 13);
