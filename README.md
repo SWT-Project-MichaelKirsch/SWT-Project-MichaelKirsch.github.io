@@ -1,4 +1,4 @@
 # SWT-Project-MichaelKirsch.github.io
 Camera Interface written in JS, CSS, Html
-###DEMO###
+# DEMO
 visit "https://SWT-Project-MichaelKirsch.github.io" for the website
