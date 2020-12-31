@@ -15,7 +15,9 @@ var cw = $('.corner_buttons').width();
 $('.corner_buttons').css({'height':cw+'px'});
 commorose_start()
 
-
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 function commorose_start(){
     commorose_out=true;
