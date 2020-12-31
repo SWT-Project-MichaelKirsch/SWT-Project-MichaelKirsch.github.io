@@ -124,6 +124,7 @@ $(".corner_buttons").mouseup(function (){
 })
 
 
+
 $("#lowerright_corner").click(function (){
     video_on=!video_on;
     if(video_on){
@@ -135,8 +136,23 @@ $("#lowerright_corner").click(function (){
         video_duration=0;
         $("#video_button").hide()
         $(".spinner_video").hide()
+    };
+});
+
+$("#video_button").click(function (){
+    video_on=!video_on;
+    if(video_on){
+        $("#video_button").show()
+        video_duration=0;
+        $(".spinner_video").show()
     }
+    else {
+        video_duration=0;
+        $("#video_button").hide()
+        $(".spinner_video").hide()
+    };
 })
+
 
 $("#lowerleft_corner").click(function (){
 
