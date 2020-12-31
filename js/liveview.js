@@ -3,16 +3,45 @@ $('#thermal-options').hide()
 $('#close_menu').hide()
 $('#video_duration_timer').hide()
 $('#video_settings').hide()
-$(".navbar").hide()
+let nav = $(".navbar")
 $("#video_button").hide()
 $(".spinner_video").hide()
+var cm = $('#commorose')
+var cm_area = $('#commorose_area');
+cm.hide()
+nav.hide()
+commorose_out=true;
+var cw = $('.corner_buttons').width();
+$('.corner_buttons').css({'height':cw+'px'});
+commorose_start()
 
+
+
+function commorose_start(){
+    commorose_out=true;
+    $('#commorose').css({top: screen.height/2, left: screen.width/2, position:'fixed'});
+    var posx = screen.width/2;
+    var posy = screen.height/2;
+    var buttonsize =  $(document).width()*0.13;
+    var upbut = buttonsize*2
+    $('.corner_buttons').css({width: buttonsize, height: buttonsize,zIndex:100, position:'fixed'})
+    $('#upperright_corner').css({top: posy-buttonsize, left: posx});
+    $('#lowerright_corner').css({top: posy, left: posx, position:'fixed'});
+    $('#upperleft_corner').css({ width: upbut, top: posy-buttonsize, left: posx-buttonsize});
+    $('#upperleft_corner').css({"border-top-left-radius":buttonsize*2})
+    $('#upperleft_corner').css({"border-top-right-radius":buttonsize*2})
+    $('#lowerleft_corner').css({top: posy, left: posx-buttonsize});
+    cm.show('fast')
+    nav.show('fast')
+    if(!video_on){
+        $("video_button").hide() //
+    }
+}
 
 screen.orientation.lock('landscape');
 
-var cm = $('#commorose')
 
-cm.hide()
+
 
 
 
@@ -20,12 +49,10 @@ var video_on = false;
 
 var video_duration = 0;
 var timer;
-var commorose_out = false;
 
-var cw = $('.corner_buttons').width();
-$('.corner_buttons').css({'height':cw+'px'});
 
-let nav = $(".navbar")
+
+
 
 function hide_when_open_menu(){
     at_least_one_menu_open = true;
@@ -135,7 +162,7 @@ $('#close_menu').click(function (){
 
 
 var mousedown = false;
-var cm_area = $('#commorose_area');
+
 
 cm_area.click(function (event){
 

@@ -58,77 +58,73 @@
 
 <div class="container-lg">
 
-        <div class="row">
-            <div class="col jumbotron">
-                <div class="">
+    <div class="row">
+        <div class="col jumbotron">
+            <div class="">
                 <h1>Settings</h1>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Hostname AP</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">AP Password</label>
-                            <input type="password" class="form-control" placeholder="Example">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Hostname WiFi</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">WiFi Password</label>
-                            <input type="password" class="form-control" placeholder="Example">
-                        </div>
-
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">Advanced Mode</label>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Textsize</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Small</option>
-                                <option>Medium</option>
-                                <option>Large</option>
-                                <option>Xl</option>
-                            </select>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-            <div class="col jumbotron">
-                <h1>Storage Information</h1>
-                <div id="canvas-holder" style="width:100%">
-                    <canvas id="chart-area"></canvas>
-                </div>
-                <div class="row">
-
-                    <div class="col" id="canvas-holder2" style="width: 50%">
-                        <h4>Download Speed</h4>
-                        <canvas id="chart-area2"></canvas>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Hostname AP</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example">
                     </div>
 
-                    <div class="col" id="canvas-holder3" style="width: 50%">
-                        <h4>Upload Speed</h4>
-                        <canvas id="chart-area3"></canvas>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">AP Password</label>
+                        <input type="password" class="form-control" placeholder="Example">
                     </div>
-                </div>
 
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Hostname WiFi</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">WiFi Password</label>
+                        <input type="password" class="form-control" placeholder="Example">
+                    </div>
+
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Advanced Mode</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Textsize</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Xl</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-info">Save</button>
+                    </div>
+
+                </form>
 
             </div>
+        </div>
+        <div class="col jumbotron">
+            <h1>Storage Information</h1>
+            <div id="canvas-holder" style="width:100%">
+                <canvas id="chart-area"></canvas>
+            </div>
+            <div class="row">
+
+                <div class="col" id="canvas-holder2" style="width: 50%">
+                    <h4>Download Speed</h4>
+                    <canvas id="chart-area2"></canvas>
+                </div>
+
+                <div class="col" id="canvas-holder3" style="width: 50%">
+                    <h4>Upload Speed</h4>
+                    <canvas id="chart-area3"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-</div>
-
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <script>
 
@@ -137,10 +133,10 @@
         data: {
             datasets: [{
                 data: [
-                    10,20,30,10,100
+                    10, 20, 30, 10, 100
                 ],
                 backgroundColor: [
-                   "#ff3030",
+                    "#ff3030",
                     "#ff9b17",
                     "#26bf00",
                     "#1a5fff",
@@ -162,13 +158,12 @@
     };
 
 
-
     var config2 = {
         type: 'line',
         data: {
             datasets: [{
                 data: [
-                    10,11,13,15,14,20,21
+                    10, 11, 13, 15, 14, 20, 21
                 ],
                 backgroundColor: [
                     "#ff9b17",
@@ -189,7 +184,7 @@
         data: {
             datasets: [{
                 data: [
-                    5,3,4,6,7,4,9
+                    5, 3, 4, 6, 7, 4, 9
                 ],
                 backgroundColor: [
                     "#58ff35",
@@ -206,8 +201,7 @@
     };
 
 
-
-    window.onload = function() {
+    window.onload = function () {
         var ctx = document.getElementById('chart-area').getContext('2d');
         window.myPie = new Chart(ctx, config);
         var ctx2 = document.getElementById('chart-area2').getContext('2d');
@@ -217,12 +211,5 @@
     };
 
 </script>
-
-
 </body>
-
-
-
-
-
 </html>
