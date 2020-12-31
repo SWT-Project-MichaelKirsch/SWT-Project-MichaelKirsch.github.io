@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
-                <a class="navbar-brand" href="index.html">Image 200145</a>
+                <a class="navbar-brand" href="live_view.html">Image 200145</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,7 +35,7 @@
             <ul class="pagination pagination-lg">
 
                 <li class="page-item">
-                    <a class="page-link" href="index.html">LiveView</a>
+                    <a class="page-link" href="live_view.html">LiveView</a>
                 </li>
 
                 <li class="page-item active" aria-current="page">
@@ -58,41 +58,50 @@
 
 
 
-        <div class="container-lg jumbo_single ">
-                <div class="row ">
+        <div class="container-fluid jumbo_single jumbotron">
+
+            <div class="row">
+                <div class="col">
                     <img id="image_big" src="static/random8.jpeg">
                 </div>
-                <div class="jumbotron">
-                <div class="row">
-                    <div class="col-sm">
-                        <div id="mapid"></div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div id="mapid"></div>
 
+                        </div>
+
+                        <div class="col-sm">
+                            <img id="thermal" src="static/thermal.png">
+                        </div>
                     </div>
 
-                    <div class="col-sm">
-                        <img id="thermal" src="static/thermal.png">
-                    </div>
 
                     <form id="input_description" class="col-sm">
+                        <div type="button" class="badge badge-pill badge-primary">
+                            Time <span class="badge badge-pill badge-light">12:05:52</span>
+                            <span class="sr-only">unread messages</span>
+                        </div>
+                        <div type="button" class="badge badge-pill badge-success">
+                            GPS <span class="badge badge-pill badge-light">high precision</span>
+                            <span class="sr-only">unread messages</span>
+                        </div>
+
                         <div class="form-group" >
-                            <label for="exampleFormControlSelect1">Priority</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                            <label for="exampleFormControlTextarea1">Short Description (Filename)</label>
+                            <textarea class="form-control" id="ea1" rows="1" ></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Description</label>
+                            <label for="exampleFormControlTextarea1">Description of Content</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button class="btn-info btn btn-lg " id="download_button">Download</button>
+                        <button class="btn-info btn btn-lg " id="download_button">Download .zip</button>
+                        <button class="btn-dark btn btn-lg " id="dutton">Print</button>
+                        <button class="btn-danger btn btn-lg " id="d_button">Download PDF</button>
                     </form>
+                </div>
+            </div>
 
-                </div>
-                </div>
             </div>
 
     <script>

@@ -2,128 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RescueCam -LIVE-</title>
-
+    <title>Starting</title>
     <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/liveview.css">
+    <link rel="stylesheet" href="css/startup.css">
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
-                <a class="navbar-brand" href="index.html">LiveCam</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </ul>
-        </div>
-
-        <nav aria-label="...">
-            <ul class="pagination pagination-lg">
-
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link ">
-                      LiveView
-                      <span class="sr-only">(current)</span>
-                    </span>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="storage_overview.html">Storage</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                    <button type="button" id="fullscreenbutton" class="btn btn-info">Fullscreen</button>
-                </li>
-
-                <li class="nav-item">
-                    <div id="video_button" class="btn btn-light">Recording <div class="spinner_video spinner-grow spinner-grow-sm text-danger" role="status"></div></div>
-                </li>
-                <li class="nav-item">
-                    <a class="btn" href="settings.html"><img src="static/settings-white-18dp.svg" width="30" height="30"
-                                                             alt="" loading="lazy"></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-
-<img id="videostream" src="static/random6.jpeg">
-<div id="leftside"></div>
-<div id="rightside"></div>
-<div id="spinner_video" class="spinner_video spinner-grow text-danger" role="status"></div>
-
-
-<div id="thermal-options">
-
-    <div id="thermal_slider_wrapper">
-        <div id="slider_middle_static"></div>
-        <img id="slider_middle_animated" src="static/jet.png">
-        <div class="slider_thermal btn btn-info" id="slider_thermal_low">
-            <p class="slider_label ">20.4°C</p>
-        </div>
-        <div class="slider_thermal btn btn-info" id="slider_thermal_high">
-            <p class="slider_label">45.4°C</p>
-        </div>
-    </div>
-
-    <div id="thermal_modes_div">
-        <h1 id="text_thermalmode">Thermal Modes</h1>
-        <div class="btn-group mr-2" role="group" aria-label="First group" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_autumn.jpg'" src="static/colorscale_autumn.jpg" id="jet" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_cool.jpg'" src="static/colorscale_cool.jpg" id="artic" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_plasma.jpg'" src="static/colorscale_plasma.jpg" id="flame" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_turbo.jpg'" src="static/colorscale_turbo.jpg" id="irgendwas" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/jet.png'" src="static/jet.png" id="iridwas" >
-        </div>
-    </div>
-
-    <input type="range" class="custom-range" value="1.0" min="0" max="1.0" step="0.01" id="customRange3">
-    <input type="range" class="custom-range" value="1.0" min="0" max="2.0" step="0.1" id="customRange4">
-
+<h1>RescueCam</h1>
+<h2>Starting</h2>
+<div class="spinner-border text-warning spinner" role="status">
+    <span class="sr-only">Loading...</span>
 </div>
+<img src="static/logo.png">
 
-<div id="commorose_area">
-</div>
-<div id="commorose">
-
-    <div id="upperleft_corner" class="corner_buttons">
-        <img id="upperleft_image" class="image_in_rose" src="static/baseline_video_settings_white_48dp.png">
-    </div>
-
-
-    <div id="lowerleft_corner" class="corner_buttons">
-        <img id="lowerleft_image" class="image_in_rose" onclick="snap()" src="static/baseline_camera_white_48dp.png">
-    </div>
-
-    <div id="video_button_div">
-        <div id="lowerright_corner" class="corner_buttons">
-            <img id="lowerright_image" class="image_in_rose" src="static/baseline_videocam_white_48dp.png">
-        </div>
-    </div>
-
-
-</div>
-
-
+<script>
+    setTimeout(function(){ window.location.href = 'live_view.html'; }, 1000);
+</script>
 </body>
-
-
-
-<script src="js/liveview.js"></script>
 </html>
