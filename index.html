@@ -13,14 +13,25 @@
 </head>
 <body>
 <h1>RescueCam</h1>
-<h2>Starting</h2>
+<h2 id="text_stuff">Starting</h2>
 <div class="spinner-border text-warning spinner" role="status">
     <span class="sr-only">Loading...</span>
 </div>
 <img src="static/logo.png">
 
 <script>
-    setTimeout(function(){ window.location.href = 'description.html'; }, 1000);
+
+    let tex = $("#text_stuff")
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Starting GPS" }, 100);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Check GPS" }, 200);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Start Log" }, 3100);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Check Thermal" }, 500);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Start Camera" }, 600);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Log User" }, 800);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Load Libs" }, 900);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Load Images" }, 1000);
+    setTimeout(function(){ document.getElementById("text_stuff").innerHTML = "Generate Thermal Matrix" }, 1250);
+    setTimeout(function(){ window.location.href = 'description.html'; }, 1500);
 </script>
 </body>
 </html>
