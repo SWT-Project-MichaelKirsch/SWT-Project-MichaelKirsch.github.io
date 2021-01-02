@@ -31,7 +31,6 @@
             </button>
         </ul>
     </div>
-
     <nav aria-label="...">
         <ul class="pagination pagination-lg">
 
@@ -48,8 +47,6 @@
 
         </ul>
     </nav>
-
-
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -58,27 +55,52 @@
         </ul>
     </div>
 </nav>
-<div class="jumbotron jumbo_single">
-    <video controls id="video_sngle" src="static/OpenGL_C%20%20%20Voxel%20Engine%20_%20Extreme%20Distance%20Test%20(71958120%20Triangles).mp4"></video>
-    <div id="mapid"></div>
-    <form id="input_description">
-        <div class="form-group" >
-            <label for="exampleFormControlSelect1">Priority</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
 
-    <button class="btn-info btn btn-lg " id="download_button">Download</button>
+
+
+<div class="container-fluid jumbo_single jumbotron">
+
+    <div class="row">
+        <div class="col">
+            <video controls id="image_big" src="static/OpenGL_C%20%20%20Voxel%20Engine%20_%20Extreme%20Distance%20Test%20(71958120%20Triangles).mp4">
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-sm">
+                    <div id="mapid"></div>
+
+                </div>
+
+                <div class="col-sm">
+                    <img id="thermal" src="static/thermal_video.png">
+                </div>
+            </div>
+
+
+            <form id="input_description" class="col-sm">
+                <div type="button" class="badge badge-pill badge-primary">
+                    Time <span class="badge badge-pill badge-light">12:05:52</span>
+                    <span class="sr-only">unread messages</span>
+                </div>
+                <div type="button" class="badge badge-pill badge-success">
+                    GPS <span class="badge badge-pill badge-light">high precision</span>
+                    <span class="sr-only">unread messages</span>
+                </div>
+
+                <div class="form-group" >
+                    <label for="exampleFormControlTextarea1">Short Description (Filename)</label>
+                    <textarea class="form-control" id="ea1" rows="1" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description of Content</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn-info btn btn-lg " id="download_button">Download .zip</button>
+                <button class="btn-dark btn btn-lg " id="dutton">Print</button>
+                <button class="btn-danger btn btn-lg " id="d_button">Download PDF</button>
+            </form>
+        </div>
+    </div>
 
 </div>
 
