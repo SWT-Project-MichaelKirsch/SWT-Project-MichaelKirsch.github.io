@@ -272,6 +272,9 @@ $("#customRange4").on('input',function (){
 function snap(){
     $("#videostream").fadeOut("fast")
     $("#videostream").fadeIn("fast")
+    $('.toast').toast("show")
+    $('.toast').toast("show")
+    $('.toast').toast("show")
 }
 
 $("#lowerright_corner").on("click",function(){
