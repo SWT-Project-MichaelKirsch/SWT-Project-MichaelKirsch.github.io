@@ -97,7 +97,7 @@
     <div id="thermal_modes_div">
         <h1 id="text_thermalmode">Thermal Modes</h1>
         <div class="btn-group mr-2" role="group" aria-label="First group" >
-            <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/off.jpg'" src="static/off.png" id="off" >
+            <img data-toggle="tooltip" data-placement="top" title="Switch off Thermal Camera" type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/off.jpg'" src="static/off.png" id="off" >
             <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_autumn.jpg'" src="static/colorscale_autumn.jpg" id="jet" >
             <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_cool.jpg'" src="static/colorscale_cool.jpg" id="artic" >
             <img type="button" class="btn  btn-secondary buttons_thermal_option" onclick="document.getElementById('slider_middle_animated').src='static/colorscale_plasma.jpg'" src="static/colorscale_plasma.jpg" id="flame" >
@@ -106,17 +106,19 @@
         </div>
     </div>
     <div id="buttons_for_slider">
-        <div id="css_slider_button_left">
+        <div id="css_slider_button_left" class="css_slider_button_left" >
+            <h5 class="css_slider_button_left" style="text-align: center; color: white;">Thermal Camera</h5>
             <button class="btn btn-lg btn-dark btn_for_slider_left btn_for_slider css_slider_button_left left_slider_active_hider ">Thermal Opacity</button>
             <p></p>
             <p></p>
-            <button id="hotspot" class="btn btn-lg btn-dark btn_for_slider btn_for_slider_left css_slider_button_left btn-outline-success ">Hotspot Mode</button>
+            <button  data-toggle="tooltip" data-placement="top" title="Auto find the hottest area" id="hotspot" class="btn btn-lg btn-dark btn_for_slider btn_for_slider_left css_slider_button_left btn-outline-success ">Hotspot Mode</button>
             <p></p>
             <p></p>
-            <button id="manual" class="btn btn-lg btn-dark btn_for_slider btn_for_slider_left css_slider_button_left btn-outline-warning active">Manual Mode</button>
+            <button data-toggle="tooltip" data-placement="top" title="Set the cutoff manual" id="manual" class="btn btn-lg btn-dark btn_for_slider btn_for_slider_left css_slider_button_left btn-outline-warning active">Manual Mode</button>
 
         </div>
-        <div id="css_slider_button_right">
+        <div id="css_slider_button_right" class="css_slider_button_right" >
+            <h5 class="css_slider_button_left" style="text-align: center; color: white;">Normal Camera</h5>
             <button class="btn btn-lg btn-dark btn_for_slider css_slider_button_right btn_slider_right">Brightness LED</button>
             <p></p>
             <p></p>

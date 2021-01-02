@@ -329,20 +329,27 @@ input[type=range]::-ms-thumb {
 
 #css_slider_button_left{
     position: fixed;
-    top: 40%;
+    top: 35%;
     left: 3%;
-    height: 20%;
+
     margin: auto;
     width: 7%;
+    border: #a2a2a2 solid;
+    border-radius: 2%;
+    background-color: #4e555b;
+    padding: 5px;
 }
 
 #css_slider_button_right{
     position: fixed;
-    top: 40%;
+    top: 35%;
     left: 90%;
-    height: 20%;
     text-align:center;
     width: 7%;
+    border: #a2a2a2 solid;
+    border-radius: 2%;
+    background-color: #4e555b;
+    padding: 5px;
 }
 
 .btn_for_slider{
