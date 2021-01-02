@@ -19,6 +19,25 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+$("#customRange3").hide()
+$("#customRange4").hide()
+left_slider_hidden = true
+right_slider_hidden = true
+
+
+$(".btn_slider_left").click(function (){
+    $(".btn_slider_left").hide()
+    $("#customRange3").show()
+    left_slider_hidden=false;
+})
+$(".btn_slider_right").click(function (){
+    $(".btn_slider_right").hide()
+    $("#customRange4").show()
+    right_slider_hidden=false;
+})
+
+
+
 function commorose_start(){
     commorose_out=true;
     $('#commorose').css({top: screen.height/2, left: screen.width/2, position:'fixed'});
@@ -192,12 +211,24 @@ cm_area.click(function (event){
         else{
 
             if (at_least_one_menu_open) {
-                $('#thermal-options').hide('fast')
-                $('#video_settings').hide('fast')
-                $('#close_menu').hide()
-                at_least_one_menu_open = false;
-                $("#corner_button_div").show()
-                cm_area.show()
+
+                if(!left_slider_hidden || !right_slider_hidden)
+                {
+                    left_slider_hidden=true
+                    right_slider_hidden=true
+                    $(".btn_slider_left").show()
+                    $("#customRange3").hide()
+                    $(".btn_slider_right").show()
+                    $("#customRange4").hide()
+                }
+                else {
+                    $('#thermal-options').hide('fast')
+                    at_least_one_menu_open = false;
+                    $("#corner_button_div").show()
+                    cm_area.show()
+                }
+
+
             }
             else {
                 commorose_out=true;

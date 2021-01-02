@@ -325,3 +325,28 @@ input[type=range]::-ms-thumb {
     background: #0fd4a9;
     cursor: pointer;
 }
+
+
+#slider_buttons_left{
+    position: fixed;
+    top: 40%;
+    left: 3%;
+    height: 20%;
+    margin: auto;
+    width: 7%;
+}
+
+#slider_buttons_right{
+    position: fixed;
+    top: 40%;
+    left: 90%;
+    height: 20%;
+    text-align:center;
+    width: 7%;
+}
+
+.btn_for_slider{
+    margin:auto;
+    max-width: 100%;
+    font-size: medium;
+}
