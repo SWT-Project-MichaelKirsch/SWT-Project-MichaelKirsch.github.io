@@ -18,23 +18,23 @@ commorose_start()
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
-
 $("#customRange3").hide()
 $("#customRange4").hide()
 left_slider_hidden = true
 right_slider_hidden = true
 
 
-$(".btn_slider_left").click(function (){
-    $(".btn_slider_left").hide()
+$(".left_slider_active_hider").click(function (){
+    $(".css_slider_button_left").hide()
     $("#customRange3").show()
     left_slider_hidden=false;
 })
 $(".btn_slider_right").click(function (){
-    $(".btn_slider_right").hide()
+    $(".css_slider_button_right").hide()
     $("#customRange4").show()
     right_slider_hidden=false;
 })
+
 
 
 
@@ -216,9 +216,9 @@ cm_area.click(function (event){
                 {
                     left_slider_hidden=true
                     right_slider_hidden=true
-                    $(".btn_slider_left").show()
+                    $(".css_slider_button_left").show()
                     $("#customRange3").hide()
-                    $(".btn_slider_right").show()
+                    $(".css_slider_button_right").show()
                     $("#customRange4").hide()
                 }
                 else {
@@ -268,6 +268,21 @@ $("#customRange4").on('input',function (){
 
     document.getElementById("videostream").style.filter = "contrast("+$(this).val()+")"
 })
+
+
+
+$("#hotspot").click(function (){
+    $(this).addClass('active');
+    $("#thermal_slider_wrapper").hide()
+    $("#manual").removeClass("active");
+})
+
+$("#manual").click(function (){
+    $(this).addClass('active');
+    $("#thermal_slider_wrapper").show()
+    $("#hotspot").removeClass("active");
+})
+
 
 function snap(){
     $("#videostream").fadeOut("fast")

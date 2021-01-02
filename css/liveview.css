@@ -327,7 +327,7 @@ input[type=range]::-ms-thumb {
 }
 
 
-#slider_buttons_left{
+#css_slider_button_left{
     position: fixed;
     top: 40%;
     left: 3%;
@@ -336,7 +336,7 @@ input[type=range]::-ms-thumb {
     width: 7%;
 }
 
-#slider_buttons_right{
+#css_slider_button_right{
     position: fixed;
     top: 40%;
     left: 90%;
